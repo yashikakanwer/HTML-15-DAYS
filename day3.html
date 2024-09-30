@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image tag and video and audio tag</title>
+</head>
+<body>
+    <img srcset="image-480w.jpg 480w, image-800w.jpg 800w, image-1200w.jpg 1200w" src="image-800w.jpg" alt="Example image">
+
+    <audio controls autoplay>
+        <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3">
+    </audio>
+
+    <video controls autoplay  >  <source src="https://file-examples.com/storage/fe58a1f07d66f447a9512f1/2017/04/file_example_MP4_480_1_5MG.mp4"></video>
+   
+    <picture>
+        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+      </picture>
+</html>
