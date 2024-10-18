@@ -4,6 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>image tag and video and audio tag</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+        margin: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+    }
+
+    audio {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        display: block;
+        border: 2px solid #4CAF50;
+        border-radius: 5px;
+    }
+
+    video {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        display: block;
+        border: 2px solid #FF5722;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    picture img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    picture {
+        margin: 20px 0;
+    }
+</style>
 </head>
 <body>
     <img srcset="image-480w.jpg 480w, image-800w.jpg 800w, image-1200w.jpg 1200w" src="image-800w.jpg" alt="Example image">

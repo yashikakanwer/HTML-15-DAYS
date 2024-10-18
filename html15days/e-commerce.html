@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Checkout Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .checkout-form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .checkout-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .checkout-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .checkout-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .checkout-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="checkout-form">
+    <h2>Checkout Form</h2>
+    <form action="submit_order" method="POST">
+        <fieldset>
+        <legend>Billing Information</legend>  
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name ">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" required>
+
+        <legend>Payment Information </legend> 
+
+        <label for="cardnumber">Card Number:</label>
+        <input type="text" id="cardnumber" name="cardnumber" required>
+
+        <label for="expdate">Expiry Date:</label>
+        <input type="text" id="expdate" name="expdate" placeholder="MM/YY" required>
+
+        
+
+       
+        <button type="submit">Place Order</button>
+    </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
