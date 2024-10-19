@@ -18,6 +18,9 @@
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     audio {
@@ -44,6 +47,12 @@
         max-width: 600px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+            margin: 10px;
+            border: 2px solid #ddd;
+            width: 300px;
+            height: auto;
+    
     }
 
     picture {
@@ -52,17 +61,20 @@
 </style>
 </head>
 <body>
-    <img srcset="image-480w.jpg 480w, image-800w.jpg 800w, image-1200w.jpg 1200w" src="image-800w.jpg" alt="Example image">
+    <img src="" alt="">
 
     <audio controls autoplay>
         <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3">
     </audio>
 
-    <video controls autoplay  >  <source src="https://file-examples.com/storage/fe58a1f07d66f447a9512f1/2017/04/file_example_MP4_480_1_5MG.mp4"></video>
+    <video controls autoplay  > <source src="https://file-examples.com/storage/fe58a1f07d66f447a9512f1/2017/04/file_example_MP4_480_1_5MG.mp4"></video>
    
-    <picture>
-        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
-        <source media="(min-width:465px)" srcset="img_white_flower.jpg">
-        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+
+
+      <picture>
+        <source media="(min-width:650px)" srcset="https://imgs.search.brave.com/ahHSdsyz8mTs6NTSc6RdB8HxLk5nLcguKg7iNPp9nO8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jbXMu/aW50ZXJpb3Jjb21w/YW55LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMS9m/b3JzeXRoaWEtbW9z/dC1iZWF1dGlmdWwt/Zmxvd2Vycy1pbWFn/ZXMuanBn">
+        <source media="(min-width:465px)" srcset="https://imgs.search.brave.com/_v_hiaAHdA5NBURmXPd5b-f-AUpBGiGdHj5C1ijAqhg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTc3/MDE3OTk5L3Bob3Rv/L3ZhcmlvdXMtY3V0/LWZsb3dlcnMtZGV0/YWlsLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz03OXhvZzNr/b01iVmNsTlV3MGt6/RUhralB1NGlYYkFF/VWNWc1F5NHBfalVz/PQ">
+        <source media="(min-width:345px)" srcset="https://imgs.search.brave.com/vOrr8yvTWfdbwqUEpx_lmRAt1jj-aJKm_Map0NlkToc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9yZW5k/ZXIuZmluZWFydGFt/ZXJpY2EuY29tL2lt/YWdlcy9yZW5kZXJl/ZC9zZWFyY2gvZnJh/bWVkLXByaW50L2lt/YWdlcy9hcnR3b3Jr/aW1hZ2VzL21lZGl1/bS8yL2Nsb3NlLXVw/LW9mLXdoaXRlLWFu/ZC15ZWxsb3ctcGx1/bWVyaWEtaGlkZXN5/LmpwZz9pbWdXST0x/MCZpbWdIST02LjUm/c2t1PUNSUTEzJm1h/dDE9UE05MTgmbWF0/Mj0mdD0yJmI9MiZs/PTImcj0yJm9mZj0w/LjUmZnJhbWVXPTAu/ODc1">
+        <img src="https://imgs.search.brave.com/XzYsdwVTztwiJIUzJudlsmARHh5VJYPizeIkvnOkol8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jbXMu/aW50ZXJpb3Jjb21w/YW55LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMS9i/aXJkLW9mLXBhcmFk/aXNlLWJlYXV0aWZ1/bC1mbG93ZXJzLmpw/Zw" alt="flowers">
       </picture>
 </html>
