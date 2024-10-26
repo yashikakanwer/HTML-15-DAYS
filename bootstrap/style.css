@@ -1,0 +1,17 @@
+*body{
+  margin: 0%;
+  padding: 0%;
+}
+    /* Custom CSS for the carousel */
+.carousel-item img {
+  height: 400px; /* Fixed height for the carousel images */
+  width: 100%; /* Make the image take full width */
+  object-fit: cover; /* Ensures the image covers the div without stretching */
+  border: 5px solid #000; /* Optional: Add a border around the images */
+}
+
+/* Additional styling if you need */
+.carousel {
+  border: 2px solid #000; /* Optional: Add a border around the entire carousel */
+  padding: 5px;
+}
