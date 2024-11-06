@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,102 +15,90 @@
         </li>
         <a href="html15days/day2.html">day2</a>
         </li>
-    </ul>
+    </ul> -->
 
-    <details>
-        <summary style="font-size: 18px; color: blue;">Click here to learn more about CSS Grid</summary>
-        <p>CSS Grid is a powerful layout system that allows you to create complex, responsive web layouts with ease.</p>
-      </details>
-
-      <details>
-        <summary>How do I reset my password?</summary>
-        <p>You can reset your password by clicking on the "Forgot Password" link on the login page.</p>
-      </details>
-      
-      <details>
-        <summary>Can I change my email address?</summary>
-        <p>Yes, you can update your email address from your account settings page.</p>
-      </details>
-
-      <dialog id="myDialog">
-        <p>This is a dialog window.</p>
-        <button onclick="document.getElementById('myDialog').close()">Close</button>
-      </dialog>
-      <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
-
-      
-
-
-      <div class="flex font-sans">
-        <div class="flex-none w-48 relative">
-          <img src="/classic-utility-jacket.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+    <section id="menu" class="container mt-5">
+  <h2 class="text-center">Our Menu</h2>
+  <div class="row">
+    <!-- dish-1 -->
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="pizza.jpg" alt="Pizza">
+        <div class="card-body">
+          <h5 class="card-title">Wood-Fired Pizza</h5>
+          <p class="card-text">Delicious cheesy pizza topped with fresh ingredients.</p>
+          <p class="price">$12</p>
         </div>
-        <form class="flex-auto p-6">
-          <div class="flex flex-wrap">
-            <h1 class="flex-auto text-lg font-semibold text-slate-900">
-              Utility Jacket
-            </h1>
-            <div class="text-lg font-semibold text-slate-500">
-              $110.00
-            </div>
-            <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
-              In stock
-            </div>
-          </div>
-          <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
-            <div class="space-x-2 flex text-sm">
-              <label>
-                <input class="sr-only peer" name="size" type="radio" value="xs" checked />
-                <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
-                  XS
-                </div>
-              </label>
-              <label>
-                <input class="sr-only peer" name="size" type="radio" value="s" />
-                <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
-                  S
-                </div>
-              </label>
-              <label>
-                <input class="sr-only peer" name="size" type="radio" value="m" />
-                <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
-                  M
-                </div>
-              </label>
-              <label>
-                <input class="sr-only peer" name="size" type="radio" value="l" />
-                <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
-                  L
-                </div>
-              </label>
-              <label>
-                <input class="sr-only peer" name="size" type="radio" value="xl" />
-                <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
-                  XL
-                </div>
-              </label>
-            </div>
-          </div>
-          <div class="flex space-x-4 mb-6 text-sm font-medium">
-            <div class="flex-auto flex space-x-4">
-              <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
-                Buy now
-              </button>
-              <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
-                Add to bag
-              </button>
-            </div>
-            <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
-              <svg width="20" height="20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
-              </svg>
-            </button>
-          </div>
-          <p class="text-sm text-slate-700">
-            Free shipping on all continental US orders.
-          </p>
-        </form>
       </div>
-      
-</body>
-</html>
+    </div>
+
+
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="burger.png" alt="Burger">
+        <div class="card-body">
+          <h5 class="card-title">Cheesy Burger</h5>
+          <p class="card-text">Delicious cheesy burger topped with fresh ingredients.</p>
+          <p class="price">$10</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="ice.png" alt="Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Eat Well, Feel Swell</h5>
+          <p class="card-text">
+            <ul>
+              <li>Cuisines: Italian, Indian, Thai</li>
+              <li>Meals: Breakfast, Lunch, Dinner, Brunch</li>
+            </ul>
+          </p>
+          <p class="price">$30</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="lama.png" alt="Lama">
+        <div class="card-body">
+          <h5 class="card-title">The Lama</h5>
+          <p class="card-text">
+            Chinese, Thai, Asian, Vegetarian friendly, Vegan options. "Try the veg green curry and pad thai" "Cowmen, Fried Rice both were perfectly cooked with mouth watering taste."
+          </p>
+          <p class="price">$20</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="sandwich.png" alt="Sandwich">
+        <div class="card-body">
+          <h5 class="card-title">Sandwich</h5>
+          <p class="card-text">Pure and tasty sandwich with nacho fries and beefy crunch burrito.</p>
+          <p class="price">$20</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="egg.png" alt="Egg Roll">
+        <div class="card-body">
+          <h5 class="card-title">Taco Bell</h5>
+          <p class="card-text">
+            Eggs, hash browns, bacon, tomatoes, cheese, and guacamole in a tortilla for a West Coast-inspired breakfast.
+          </p>
+          <p class="price">$3.30</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

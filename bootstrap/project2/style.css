@@ -1,0 +1,108 @@
+body {
+    background-color: #010d1a;
+    color: #f2f6f2;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.navbar {
+    background-color: #851966;
+}
+
+.nav-link {
+    color: #e83939;
+}
+
+.nav-link:hover {
+    color: #0f25ed;
+}
+
+.form-control {
+    width: 700px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Allow card body to expand and fill the column */
+}
+
+.carousel {
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel-image {
+    height: 350px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#menu .card {
+    height: 100%; /* Makes each card fill the column height */
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .card-img-top {
+    object-fit: cover; /* Ensures images maintain proportions without distortion */
+    height: 200px; /* Set a fixed height for consistency */
+}
+
+#menu .card-body {
+    flex-grow: 1; /* Allows the body to stretch and align content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu .card-title, #menu .card-text, #menu .price {
+    margin-bottom: 2px;
+}
+
+#menu .price {
+    font-weight: bold;
+    color: #333;
+    margin-top: auto; /* Pushes the price to the bottom */
+}
+
+/* Responsive Layout for cards */
+@media (max-width: 768px) {
+    #menu .col-md-4 {
+        flex: 1 0 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    #menu .col-sm-6 {
+        flex: 1 0 100%;
+    }
+}
+
+/* Ensuring responsiveness */
+@media (max-width: 576px) {
+    .contact-info p {
+        font-size: 0.9rem; /* Smaller text on mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .operating-hours p {
+        font-size: 0.95rem; /* Slightly smaller operating hours text */
+    }
+}
+
+.form-group {
+    max-width: 100%; /* Ensures form fields expand within container */
+}
+
+/* Optional: Padding and margins for spacing adjustments */
+.container {
+    padding: 0 15px;
+}
