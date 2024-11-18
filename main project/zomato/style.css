@@ -287,7 +287,7 @@ margin-bottom: 10px;
     .app-section{
         width: 100%;
        
-        background: rgb(255, 240, 240);
+        background-color: rgb(255, 251, 247);
         padding: 60px 0;
     }
     .app {
@@ -325,6 +325,8 @@ margin-bottom: 10px;
     }
     .app .get-app .email-phone input{
         margin-bottom: 30px;
+        
+
 
     }
     .app .get-app .email-phone input [type=radio]{
@@ -444,9 +446,7 @@ margin-bottom: 10px;
 
 
 
-
-
-@media  only screen and (max-width:786px ){
+@media screen and (max-width:786px ){
     .menu-icon{
         display: block;
     }
@@ -496,5 +496,36 @@ margin-bottom: 10px;
 
     }
 }
+@media screen and (max-width:768px) {
+    .content-wrapper {
+        margin: auto;
 
+    }
+    .search_container{
+        height: 2.4rem;
+    width: 190%;
+
+    }
+    .collection h1 {
+        text-align: center;
+    }
+    .collection p{
+        text-align: center;
+    }
+    .popular-location {
+        justify-content: center;}
+
+        .app-section{
+            display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 251, 247);
+        }
+
+        .app-store{
+        width: 75%;
+    }
+          
+}
 
