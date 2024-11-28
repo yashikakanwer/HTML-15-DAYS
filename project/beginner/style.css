@@ -1,8 +1,15 @@
-*{
-    margin: 0;
+
+   *{ margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Uchen', serif;
+    font-family:serif ;
+}
+
+p{
+    font-family: monospace;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: fantasy;
 }
 
 body {
@@ -89,12 +96,14 @@ body {
     font-size: 60px;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
+    font-family: fantasy;
 }
 .content h2{
     font-size: 60px;
     color: white;
     text-shadow: 1px 1px 1px black;
     font-weight: bold;
+    font-family: fantasy;
 }
 .changecontent::after{
     content: ' ';
@@ -102,23 +111,25 @@ body {
     animation: changetext 10s infinite linear;
     font-weight: bold;
 }
- @keyframes changetext{
+ /* @keyframes changetext{
     0%{content: "Birthday cake";}
     20%{content: "Chocolate cake";}
     50%{content: "Party cake";}
     60%{content: "Slice cake";}
     100%{content: "Cup cake";} 
-}
+} */
 .content p{
     color: white;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
+    font-family: monospace;
 }
 .content .btn{
     width: 110px;
     height: 38px;
     background-color: #573818;
     color: white;
+    font-family: monospace ;
 }
 @media screen and (max-width:800px){
     .content h3{
@@ -137,10 +148,10 @@ body {
 }
 @media screen and (max-width:330px){
     .content h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     .content h3{
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 /* home section end */
@@ -172,6 +183,9 @@ body {
     box-shadow: 0px 0px 10px black;
     margin-top: 50px;
 }
+.banner h5{
+    color: aliceblue;
+}
 .banner .img{
     flex: 1 1 400px;
 }
@@ -196,43 +210,53 @@ body {
 .banner .content p{
     color: rgba(161,109,14,1);
 }
-#btnorder button{
+button#btnorder{
     width: 150px;
     height: 32px;
     letter-spacing: 5px;
-    background-color: hwb(39 5% 37%);
+    background-color: #573818;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: monospace;
 }
     
 .product-card{
+    width: 100%;
     margin-bottom: 20px;
-    margin-top: 40px;
-        background: rgb(46, 20, 1);
-    font-family:'Times New Roman', Times, serif;
+    margin-top: 141px;
+    background: rgb(46, 20, 1);
+    
 }
-.card{
+.card  {
     
-    
-    
+    width: 88%;
+    margin: auto;
+    margin-bottom: 20px !important;
     background-color:hwb(39 4% 19%);
     box-shadow: 0px 0px 5px rgb(235, 8, 8);
     transition: 0.5s ease;
     cursor: pointer;
     justify-content: center;
     
+    
 }
 .col-md-3.py-3.py-md-0 {
     padding: 0;
+}
+
+
+.row{margin:auto;
+justify-content:center;
+align-items:center;
 }
 
 .product-card h1{
     color: aliceblue;
     justify-items: center;
     font-size: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fantasy;
     text-align: center;
     margin-bottom:20px ;
 
@@ -240,11 +264,12 @@ body {
 .product-card h6 span button:hover{
     background-color: #2e1700;
     color: white;
+    font-family:serif;
 }
 .product-card h6 {
     color: rgb(13, 12, 12);
     font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-family: fantasy;
     margin-top: 20px;
 }
 .product-card h6 span button{
@@ -253,6 +278,7 @@ body {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    font-family: monospace;
     
     position: relative; /* Ya parent ke respect me set karein */
   display: inline-block; /* Align the button properly */
@@ -263,13 +289,13 @@ body {
 .product-card p{
     color: rgb(1, 19, 35);
     font-size: 15px;
-    font-family: Arial, sans-serif;
+    font-family: monospace;
     margin-top: 20px;
 }
 .product-card h3{
     color: aliceblue;
     font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fantasy;
     margin-bottom:20px ;
 }
 
@@ -285,7 +311,7 @@ body {
 .gallery  h1{
     text-align: center;
     font-size: bold;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:fantasy;
 
     }
 
@@ -297,7 +323,7 @@ body {
   .about h1 {
     text-align: center;
     font-size: 35px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: fantasy;
       margin-bottom: 20px;
   }
     .cards{
@@ -307,12 +333,13 @@ body {
     .cards p{
         font-size: 20px;
         color: rgb(23, 23, 22);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: monospace;
          }
 
          .cards h3{
             color: rgb(121, 121, 128);
             text-shadow:0 0 rgba(211, 180, 180, 0.5) ;
+            font-family: fantasy;
             
         
          }
@@ -330,7 +357,7 @@ body {
             text-align: center;
             justify-content: center;
             margin: auto;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: monospace;
             font-size: medium;
             letter-spacing: 2px;
             text-align: center;
@@ -342,11 +369,17 @@ body {
             text-weight: 1rem;
             font-style: italic;
             color: #464545;
+            font-family: monospace;
 
          }
     
 
-
+          .about button {
+            font-family: fantasy;
+            background-color: ghostwhite;
+            width: 120px;
+            height: 37px;
+        }
 
 
 
@@ -382,4 +415,3 @@ body {
         height: 100vh;
     }
 }
-/* banner end */
