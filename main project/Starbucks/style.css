@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  border-box: 1px ;
+   
 }
 
 
@@ -189,7 +189,63 @@ i.bi.bi-person-circle {
 }
 
 
-
+body {
+  background-color: #f4f4f0;
+  font-family: Arial, sans-serif;
+}
+.recommendation-section {
+  padding: 20px;
+}
+.card-custom {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 15px;
+  flex-direction: row; /* Ensure the image and content are side by side */
+}
+.card-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.card-body {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.card-text {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+.btn-add {
+  background-color: #008248;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.btn-add:hover {
+  background-color: #005c37;
+}
+.card-container {
+  display: flex;
+  gap: 20px; 
+  overflow-x: auto;
+}
 
 .hero-section {
   background-color: #dcd6d6;;

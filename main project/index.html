@@ -1,236 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Youtube</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-     <style>
-        .youtube-logo {
-    width: 100px;
-    height: 60px;
-    background-color: #FF0000; /* Red background */
-    border-radius: 12px; /* Rounded corners */
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.play-button {
-    width: 0;
-    height: 0;
-    border-left: 24px solid white; /* White triangle */
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
-}
-
-li{
-    list-style: none;            
-}
-
-.icons ul {
-    list-style: none; /* Remove bullets from list */
-    padding: 0;
-    margin: 0;
-    
-    align-items: center;
-}
-
-.icons ul li {
-   margin: 10px;
-}
-
-.icons ul li i {
-    font-size: 24px; /* Adjust the icon size */
-    color: #606060; /* Icon color, similar to YouTube's theme */
-    transition: color 0.3s ease; /* Smooth color transition */
-    
-}
-
-.icons ul li i:hover {
-    color: #ff0000; /* Change color to red (like YouTube) on hover */
-}
-
-.icons ul li i.fa-square-youtube {
-    font-size: 30px; /* Adjust YouTube icon to be slightly larger */
-}
-.icons ul li span {
-    display: block; /* Make span a block element to position below the icon */
-    font-size: 12px; /* Font size for the names */
-    color: #606060; /* Name color */
-    margin-top: 3px; /* Space between icon and name */
-}
-.icons
-{
-    float: left;
-}
-.video-grid {
-    display: grid; /* Use grid for video layout */
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsive columns */
-    gap: 20px; /* Space between videos */
-    padding: 5px; /* Padding around grid */
-    flex-grow: initial; /* Allow the grid to grow and fill available space */
-}
-body{
-    padding: 0;
-    margin: 0;
-}
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-.icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.icons iframe{
-    margin: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    width: 300px;
-    height: auto;
-}
-     </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4f0;
+      font-family: Arial, sans-serif;
+    }
+    .recommendation-section {
+      padding: 20px;
+    }
+    .card-custom {
+      display: flex;
+      align-items: center;
+      border: none;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 15px;
+      flex-direction: row; /* Ensure the image and content are side by side */
+    }
+    .card-image img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .card-body {
+      flex-grow: 1;
+      padding-left: 20px;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .card-text {
+      color: #555;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .btn-add {
+      background-color: #008248;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+    .btn-add:hover {
+      background-color: #005c37;
+    }
+    .card-container {
+      display: flex;
+      gap: 20px; /* Add space between cards */
+      overflow-x: auto; /* Enable horizontal scrolling */
+    }
+  </style>
 </head>
+<body>
 
+    <!-- cards container -->
 
-
-
-<body style="background-color: black;">
-
-    
-    <nav class="icons" >
-        <ul style="font-size: 10PX; text-align: center;">
-            <li>
-                <i class="fa-solid fa-bars"></i>
-                <span>Menu</span>
-            </li>
-            <li>
-                <i class="fa fa-home" aria-hidden="true"></i>
-                <span>Home</span>
-            </li>
-            <li>
-                <i class="fa-solid fa-square-caret-right"></i>
-                <span>Shorts</span>
-            </li>
-            <li>
-                <i class="fa-brands fa-square-youtube"></i>
-                <span>Subscription</span>
-            </li>
-            <li>
-                <i class="fa-solid fa-circle-user"></i>
-                <span>Profile </span>
-            </li>
-            <li>
-                <i class="fa-solid fa-download"></i>
-                <span>Download</span>
-            </li>
-            <li>
-                <i class="fas fa-history"></i>
-                <span>History</span>
-            </li>
-        </ul>
-    </nav>
-    <div style="color: aliceblue; " > 
-        <header class="youtube-logo" >
-        <H1 class="play-button">YOUTUBE</H1>
-            </div>
-                 <span><div class="search-container">
-                    <input type="text" class="search-input" placeholder="Search">
-                    <button class="search-button">Search</button>
-                </div></span>
-            
-           
-    </header>  </div>
-
-
-
-    <main  class="video-grid" >
-
-
-         <figure><DIV CLASS="icons" style="color: aliceblue;">
-         <iframe width="339.54" height="183.84" src="https://www.youtube.com/embed/h3M4bm2EveM" title="The Future of AI with GOOGLE CEO (Sundar Pichai)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></DIV>
-        <H1 style="color: azure;">THIS IS TITAL</H1>
-        </figure>
-
-
-        <figure><DIV CLASS="icons">
-        <iframe width="339.54" height="183.84" src="https://www.youtube.com/embed/p2j6Wq57MEE" title="If I Wanted a Software Engineering Placement in 2025, I’d Do This" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></DIV>
-        <H1 style="color: azure;">THIS IS TITAL</H1>
-    </figure>
-
-
-
-
-        <figure><DIV CLASS="icons">
-        <iframe width="339.54" height="183.84" src="https://www.youtube.com/embed/GldPziWEoBM" title="Reality of my 62LPA package" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></DIV>
-        <H1 style="color: azure;">THIS IS TITAL</H1>
-    </figure>
-
-
-
-
-
-        <figure><DIV CLASS="icons">
-        <iframe width="339.54" height="183.84" src="https://www.youtube.com/embed/1gukvtH_a3I" title="Chaudhary - Amit Trivedi feat Mame Khan, Coke Studio @ MTV Season 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></DIV>
-        <H1 style="color: azure;">THIS IS TITAL</H1>
-    </figure>
-
-
-
-
-
-        <figure><DIV CLASS="icons">
-        <iframe width="339.54" height="183.84" src="https://www.youtube.com/embed/HCd9E3w547U" title="Best Memorization Hacks to Remember Code | Code Memorization Tips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></DIV>
-        <H1 style="color: azure;">THIS IS TITAL</H1>
-    </figure>
-
-
-
-
-
-        <figure><div class="icons">
-            <iframe width="339.54" height="183.84" src="https://www.youtube.com/embed/F-CPlRiv8So" title="Honest conversation with Google &amp; Microsoft Recruiter | Secrets no-one tells you! 😱" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
-            <H1 style="color: azure;">THIS IS TITAL</H1>
-        </figure>
-
-
-
-
-
-            <figure><DIV CLASS="icons">
-        <iframe width="339.54" height="183.84" src="https://www.youtube.com/embed/zjpxYxMXDnA" title="OFF CAMPUS Internship Calendar 2025 | Which company hires when OFF CAMPUS?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></DIV>
-        <H1 style="color: azure;">THIS IS TITAL</H1>
-    </figure>
-
-
-
-
-        <figure><div class="icons">
-        <iframe width="339.54" height="183.84" src="https://www.youtube.com/embed/4n59ZVE3Nu4" title="Honest talk with Google Recruiter | Job market, Resume, Tier 3 colleges, CGPA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        <H1 style="color: azure;">THIS IS TITAL</H1>
-    </figure>
-
+    <div class="recommendation-section">
+        <h3 class="mb-4">Barista Recommends</h3>
         
+        <!-- Horizontal Card Container -->
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="card card-custom">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/100" alt="Cappuccino">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Cappuccino</h5>
+              <p class="card-text">SHORT().</p>
+              <p class="price">₹ 283.50</p>
+              <button class="btn btn-add w-100">Add Item</button>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="card card-custom">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/100" alt="Signature Hot Chocolate">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Signature Hot Chocolate</h5>
+              <p class="card-text">SHORT(237 mL). 284 kcal</p>
+              <p class="price">₹ 309.75</p>
+              <button class="btn btn-add w-100">Add Item</button>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="card card-custom">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/100" alt="Vanilla Milkshake">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Vanilla Milkshake</h5>
+              <p class="card-text">TALL(354 mL). PER SERVE (354ml) - 531 kcal</p>
+              <p class="price">₹ 378.00</p>
+              <button class="btn btn-add w-100">Add Item</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <figure><DIV CLASS="icons">
-            <iframe width="339.54" height="183.84" src="https://www.youtube.com/embed/zjpxYxMXDnA" title="OFF CAMPUS Internship Calendar 2025 | Which company hires when OFF CAMPUS?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></DIV>
-            <H1 style="color: azure;">THIS IS TITAL</H1>
-        </figure>
-
-    
-    
-    
-            </main>
-
-    
-
-    
-
-    
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
